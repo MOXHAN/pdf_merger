@@ -1,0 +1,19 @@
+body {
+    background-color:beige ;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: underline;
+    padding-bottom: 60px;
+    padding-top: 60px;
+}
+
+#fileUpload {
+    display: flex;
+    justify-content: center;
+}
