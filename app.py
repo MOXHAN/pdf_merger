@@ -9,10 +9,11 @@ app = Flask(__name__)
 def upload_file():
 
     if request.method == "POST":
-        if "file" not in request.files["file"]:
+        if "file" not in request.files:
             return "No file uploaded", 400
         
         files = request.files.getlist("file")
+        
         if not all(f.filename for f in files):
             return "No file selected", 400
         

@@ -1,19 +1,26 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" href="index.css">
-    <title>File Upload</title>
+    <link rel="stylesheet" href="/static/css/index.css">
+    <title>PDF Merger</title>
 </head>
-<body>
+<body class="body">
+
     <h1>Merge files</h1>
-    <form 
+
+    <div id="fileUpload">
+
+        <form 
         id="uploadForm"
         action="/"
         method="post"
         enctype="multipart/form-data" >
         
         <input type="file" name="file" id="fileInput" multiple />
-        <input type="submit" value="merge" />
-    </form>
+        <input type="submit" value="merge files" />
+        </form>
+
+    </div> 
+
 </body>
 </html>
